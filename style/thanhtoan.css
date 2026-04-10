@@ -1,0 +1,330 @@
+/* === CSS CẬP NHẬT === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* background-color: #f9f0f0;
+    background-attachment: fixed;
+     */
+     height: 100%;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+}
+
+.container {
+    /* width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; */
+    flex: 1;
+}
+
+/* ======= SEARCH BOX ======= */
+.searchbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.searchbox input {
+    border: none;
+    background: transparent;
+    flex: 1;
+    outline: none;
+    font-size: 18px;
+    color: #444;
+    padding-left: 10px;
+}
+
+.searchbox button {
+    border: none;
+    background: #444;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.searchbox button:hover {
+    background: #666;
+    transform: scale(1.1);
+}
+
+/* Kiểu dáng của nút hamburger */
+.hamburger-menu {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .hamburger-icon {
+    font-size: 30px;
+    background: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  /* Kiểu dáng menu ẩn ban đầu */
+  .menu-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background: #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .menu-content a {
+    display: block;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .menu-content a:hover {
+    background: rgb(0, 0, 0, 0.5);
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    font-size: 32px;
+    text-align: left;
+  }
+  
+  header h1 a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo-right {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: #333; /* Làm nền trong suốt nhẹ */
+    border-radius: 10px;
+    gap: 15px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+  }
+  
+  .nav_link {
+    font-size: 18px;
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+  }
+  
+  .nav_link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+  }
+
+.banner {
+    background: url('image/banner/banner1.jpg');
+    text-align: center;
+    padding: 60px 0;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+
+.banner h2 {
+    font-size: 36px;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.payment-container {
+    max-width: 500px;
+    margin: 20px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.btn-pay {
+    margin-top: 20px;
+    background: #00796b;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.btn-pay:hover {
+    background: #004d40;
+}
+
+footer {
+    background-color: #1A3C34; 
+    color: white;
+    padding: 15px 20px;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+}
+
+.flag {
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    flex-wrap: wrap; 
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+.contact-section h2 {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.contact-section p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.contact-section i {
+    margin-right: 6px; 
+    font-size: 1em; 
+}
+
+.contact-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+    color: #00CED1; 
+}
+.social-links {
+    display: flex;
+    gap: 15px;
+    align-items: center; 
+}
+
+.social-links a {
+    font-size: 1.5em;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.social-links i {
+    margin-right: 10px; 
+    font-size: 1em; 
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    color: #00CED1;
+}
+
+.social-links .animate {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .container-form {
+        width: 90%;
+    }
+    .banner h2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+    .banner h2 {
+        font-size: 24px;
+    }
+    .container-form {
+        width: 100%;
+    }
+}
